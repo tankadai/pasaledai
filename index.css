@@ -1,3 +1,12 @@
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+background-color: gray ;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#facc16 ;
+}
 *{
     margin: 0%;
     padding: 0%;
@@ -8,7 +17,7 @@ body{
 }
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0%;
@@ -23,7 +32,9 @@ body{
     background-color: #111828;
 }
 .logo{
+    margin-left: 18px;
     font-size: 19px;
+    flex-direction: row;
 }
 ul{
     display: flex;
@@ -43,6 +54,28 @@ ul li a:hover{
 nav i{
     font-size: 26px;
 }
+.srcbtn {
+    width: 41px;
+    height: 41px;
+    background-image: url('https://i.ibb.co/ykg46dZ/search.png');
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: transparent;
+    filter: brightness(0) invert(1);
+    margin-left: 8px;
+}
+.searcht input[type=text] {
+  justify-content: center;
+  align-items: center;
+    width: 100px;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
 .main{
     color: #facc16;
     display: flex;
@@ -71,17 +104,33 @@ nav i{
     color: white;
     font-size: 22px;
     margin-top: 22px;
+    font-weight: 750;
 }
 .shop{
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    white-space: nowrap;
     justify-content: center;
+    overflow-x: auto;
 }
+.shop::-webkit-scrollbar{
+    height: 5px;
+    margin-top: 37px;
+}
+.shop::-webkit-scrollbar-thumb{
+    background-color: #facc16;
+}
+.shop ::-webkit-scrollbar-track{
+background-color: gray ;
+}
+
 .shop .shopcard{
-    width: 300px;
+    display: inline-block;
+    height: 340px;
+    width: 230px;
     margin-inline: 22px;
     margin-top: 22px;
-    background-color: #030617;
+    margin-bottom: 2px;
+    background-color:#030617;
     border: 2px solid black ;
     border-radius: 8px;
     color: white;
@@ -90,12 +139,14 @@ nav i{
 .shopcard button{
     width: 80px;
     height: 28px;
+    margin-bottom: 10px;
     background-color: #facc16;
     border: 2px solid white ;
     border-radius: 8px;
     color: white;
-    font-size: 18px;
-    margin-top: 21px;
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 750;
 }
 .shopcard p{
     margin-top: 11px;
@@ -103,7 +154,7 @@ nav i{
 }
 .shopcard img{
     width: 100%;
-    height: 300px;
+    height: 230px;
     border: 2px solid white ;
     border-radius: 8px;
 }
@@ -151,14 +202,7 @@ nav i{
     position: relative;
     top: 44px;
 }
-.search input[type=text] {
-    width: 100px;
-    height: 75%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
+
 .text a{
     height: 10px;
     background: transparent;
@@ -166,3 +210,8 @@ nav i{
     filter: brightness(0) invert(1);
     
 }
+.cart {
+    margin-right: 35px;
+    filter: brightness(0) invert(1);
+}
+
