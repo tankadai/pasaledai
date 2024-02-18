@@ -1,0 +1,161 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'Roboto', sans-serif;   
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 88px;
+    background-color:#030617;
+    color: white;
+}
+.container a.active{
+    color: #facc16;}
+body{
+    background-color: #111828;
+}
+.logo{
+    font-size: 19px;
+}
+ul{
+    display: flex;
+}
+ul li {
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-inline: 22px;
+    color: white;
+}
+ul li a:hover{
+    color: #facc16;
+}
+nav i{
+    font-size: 26px;
+}
+.main{
+    color: #facc16;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 99px;
+}
+.main img{
+    width: 324px;
+}
+.mainText{
+    margin-top: 74px;
+}
+.main h1{
+    font-size: 45px;
+}
+.main p{
+    color: white;
+    margin-top: 22px;
+}
+.main button{
+    width: 140px;
+    height: 40px;
+    background-color: #facc16;
+    border: 2px solid white ;
+    border-radius: 8px;
+    color: white;
+    font-size: 22px;
+    margin-top: 22px;
+}
+.shop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.shop .shopcard{
+    width: 300px;
+    margin-inline: 22px;
+    margin-top: 22px;
+    background-color: #030617;
+    border: 2px solid black ;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+.shopcard button{
+    width: 80px;
+    height: 28px;
+    background-color: #facc16;
+    border: 2px solid white ;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    margin-top: 21px;
+}
+.shopcard p{
+    margin-top: 11px;
+    
+}
+.shopcard img{
+    width: 100%;
+    height: 300px;
+    border: 2px solid white ;
+    border-radius: 8px;
+}
+.head{
+    color: white;
+    text-align: center;
+    padding: 88px;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 66px;
+    margin-top: 66px;
+    background-color: #030617;
+    color: white;
+}
+.text{
+    margin-top: 22px;
+}
+.text p{
+    margin-top: 11px;
+}
+.card {
+    display: flex;
+    gap: 33px;
+    width: 800px;
+    margin: auto;
+    margin-top:83px;
+}
+.card img{
+    width: 400px;
+}
+.card p{
+    margin-top: 22px;
+}
+.card a{
+    padding: 4px 22px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-top: 22px;
+    text-decoration: none;
+    position: relative;
+    top: 44px;
+}
+.search input[type=text] {
+    width: 100px;
+    height: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
