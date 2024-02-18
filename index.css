@@ -159,3 +159,10 @@ nav i{
     border-radius: 5px;
     font-size: 16px;
   }
+.text a{
+    height: 10px;
+    background: transparent;
+    font-size: 10px;
+    filter: brightness(0) invert(1);
+    
+}
